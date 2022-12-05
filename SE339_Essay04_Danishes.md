@@ -1,4 +1,4 @@
-# ReactiveUI and RXJS
+# ReactiveUI and ReactiveX
 ##### _Mason, Caelan, Frank, Isaiah, Vibhu_
 
 ---
