@@ -13,3 +13,11 @@ Both ReactiveUI and ReactiveX make use of the Observer pattern to handle asynchr
 https://reactivex.io/intro.html
 https://www.reactiveui.net/docs/reactive-programming/
 https://www.reactiveui.net/docs/getting-started/
+
+
+## Observables
+
+https://reactivex.io/documentation/observable.html
+
+https://www.reactiveui.net/docs/handbook/when-any/
+
