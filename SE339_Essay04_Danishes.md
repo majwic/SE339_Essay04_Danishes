@@ -33,6 +33,7 @@ https://www.reactiveui.net/docs/handbook/when-any/
 ## Schedulers
 
 ### _ReactiveUI's Schedulers_
+ReactiveUI provides two app wide schedulers, `RxApp.MainThreadScheduler` and `RxApp.TaskpoolScheduler`, which specify where and/or when to execute tasks related to a corresponding `Observable`. The `RxApp.MainThreadScheduler` scheduler specifically executes tasks on the UI thread for updating the layout of elements of an application. Next, the `RxApp.TaskpoolScheduler` scheduler executes code using the Task Parallel Libray (TPL) taskpool. The TPL is part of the .NET framework, and simplifies the process of adding parallelism and concurrency to applications. The TPL accomplishes this by dynamically scaling the degree of concurrency to use all available processors as efficiently as possible. Users of ReactiveUI can use these schedulers along with tasks relating to `Observables` and `ReactiveCommands` to increase their applications performance. 
 
 ### _ReactiveX's Schedulers_
 
