@@ -39,3 +39,5 @@ ReactiveUI provides two app wide schedulers, `RxApp.MainThreadScheduler` and `Rx
 
 ### _Schedulers Comparision_
 
+## Conclusion
+
