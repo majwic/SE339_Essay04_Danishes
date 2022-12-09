@@ -30,4 +30,6 @@ ReactiveX has a main app wide scheduler named `AsyncScheduler` that performs the
 ### _Schedulers Comparision_
 Comparatively, ReactiveX's schedulers, such as `AnimationFrameActions` or `AsapScheduler`, are able to handle multiple different types of tasks in different mannerisms. However, ReactiveUI's usage of the TPL protocol instead of `Actions` allows the tasks generalized faster performance for all types of tasks due to the dynamic scaling of concurrency to use all processors as efficiently as possible. Essentially, the schedulers of ReactiveX can perform different sorts of tasks according to needs at runtime whereas ReactiveUI is able to ensure generalized good performance across the board.
 ## Conclusion
-In essence, ReactiveUI and ReactiveX are fairly similar, but they do differ in a few areas. A couple noteable differences that are ReactiveUI uses MVVM while ReactiveX does not, and that ReactiveUI's schedulers allow for parallelism while ReactiveX focuses on handling different types of tasks in separate schedulers.
+
+In essence, ReactiveUI and ReactiveX are fairly similar in that they both use an Observer pattern and that they utilize similar functions to manage streams of events, but they do differ in a few areas. A couple of noteable differences are that ReactiveUI uses MVVM while ReactiveX does not, and that ReactiveUI's schedulars allow for parallelism while ReactiveX focuses on handling different types of tasks in seperate schedulars.
+
