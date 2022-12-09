@@ -7,13 +7,7 @@
 ReactiveX is a library for creating asynchronous and event-based programs using observable sequences. This approach is similar to how ReactiveUI handles updating the view as the user triggers events. ReactiveUI provides additional features tailored specifically for creating an application with a Model-View-ViewModel (MVVM) pattern. Nevertheless, ReactiveX and ReactiveUI share many similarities and differences between their observables and schedulers. These modules are the driving force behind reactive programming, and ReactiveX and ReactiveUI would not function without them.
 
 ## Reactive Programming Patterns
-Both ReactiveUI and ReactiveX make use of the Observer pattern to handle asynchronous events. Both applications utilize similar functions to manipulate streams of ongoing events (((give examples of functions and events here))). One key difference is ReactiveUI's inclusion of Model-View-ViewModel elements which increases the portability and maintainability of potential applications. The MVVM pattern works by having observable properties and commands passed between the View and ViewModel while (((talk about ViewModel to Model))). One key part of a MVVM framework is the `ICommand` interface which allows the View to trigger logic defined in the ViewModel. ReactiveUI has `ReactiveCommand` which is an implementation of `ICommand`. ReactiveX has no implementation making it ineffective for developing a MVVM pattern.
-
-
-https://reactivex.io/intro.html
-https://www.reactiveui.net/docs/reactive-programming/
-https://www.reactiveui.net/docs/getting-started/
-
+ReactiveUI and ReactiveX both make use of the Observer pattern to handle asynchronous events. Both applications utilize similar functions to manipulate streams of ongoing events. These methods are able to `Create` Observables and define their behavior to "push" data to a stream while also having iterators that "pull" data from the data streams. One key difference is ReactiveUI's inclusion of Model-View-ViewModel elements which increases the portability and maintainability of potential applications. The MVVM pattern works by having observable properties and commands passed between the View and ViewModel such that the ViewModel is comstantly communicating with the View which updates automatically. Simultaneously, the Model represents the content of the state as well as other program logic which is retrieved by the ViewModel upon input from the View. This allows a level of abstraction in between the state and the behavior of ReactiveUI which is not present in ReactiveX. One key part of a MVVM framework is the `ICommand` interface which allows the View to trigger logic defined in the ViewModel. ReactiveUI has `ReactiveCommand` which is an implementation of `ICommand`. ReactiveX has no implementation making it ineffective for developing a MVVM pattern.
 
 ## Observables
 
